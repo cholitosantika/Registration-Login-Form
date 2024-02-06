@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>Registration</h1>
+      <h1>Login</h1>
 
       <!-- Form Section -->
       <form id="register" action="" method="post">
