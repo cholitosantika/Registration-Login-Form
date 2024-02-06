@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-  
+    <div class="container">
+      <h1>Welcome!!</h1>
+      <div class="link-box">
+        <table>
+          <tr><td><a href="registration.php">Register</a></td></tr>
+          <tr><td><a href="login.php">login</a></td></tr>
+        </table> 
+        </table>
+      </div>
+    </div>
   </body>
 </html>
