@@ -12,6 +12,8 @@
 
       <!-- Form Section -->
       <form id="register" action="" method="post">
+        <input name="submitted" id="submitted" type="hidden" value="login" >
+        
         <div class="form-group">
           <label id="email-label" for="email">Email</label>
           <input type="email" name="email" id="email" placeholder="Enter your Email" required>
