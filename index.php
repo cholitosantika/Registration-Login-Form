@@ -8,14 +8,17 @@
   </head>
   <body>
     <div class="container">
-      <h1>Welcome!!</h1>
-      <div class="link-box">
-        <table>
-          <tr><td><a href="registration.php">Register</a></td></tr>
-          <tr><td><a href="login.php">login</a></td></tr>
-        </table> 
-        </table>
-      </div>
+        <header>
+            <h1>Welcome!!</h1>
+        </header>
+        <div class="link-login">
+            <a href="login.php"><h2>Login</h2></a>
+        </div>     
+        <br />
+        <div class="link-register">
+            <a href="registration.php"><h2>Registration</h2></a>
+        </div>
+
     </div>
   </body>
 </html>
