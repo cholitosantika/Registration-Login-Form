@@ -42,7 +42,7 @@ h2{
 /*Header*/
 header {
     text-align: center;
-    width:100%
+    width:90%;
     margin:auto;
 }
 
@@ -58,11 +58,11 @@ hr {
 .link-login, .link-register {
     width: 90%;
     line-height: inherit;
-    padding:5px;
+    padding:10px;
     text-align: center;
     display: block;
     text-align: center;
-    border-radius: 3px;
+    border-radius: 10px;
     margin-top: 10px;
     margin: auto;
 }
@@ -70,9 +70,7 @@ hr {
     background-color:#2196F3
 }
 
-.link-login {
-    background-color: #2196F3;
-}
+
 
 .link-register {
     background-color: gray
@@ -152,3 +150,14 @@ button {
     background: gray;
     border-radius: 10px;
     cursor: pointer;
+}
+
+
+.submit-logout {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: red;
+    border-radius: 10px;
+    cursor: pointer;
+}
