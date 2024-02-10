@@ -1,4 +1,19 @@
 <?php
+require_once('config.php');
+session_start();
+$return = false;
+
+if (!empty($_SESSION['email'])) {
+    header("location:home.php");
+}
+
+if (isset($_POST['login'])) {
+    $email = $_POST['email'];
+    $password = md5($_POST['password']);
+    $return = login($email, $password);
+    echo "<script type='text/javascript'>alert('{$message_code[$return]}');</script>";
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,11 +29,10 @@
 
         <!-- Form Section -->
         <form id="register" action="" method="post">
-            <input name="submitted" id="submitted" type="hidden" value="login" />
 
             <div class="form-group">
-                <label id="username-label" for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="Enter your Usename" required />
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required />
             </div>
             <br />
             <div class="form-group">
@@ -27,7 +41,7 @@
             </div>
             <br />
             <div class="form-group">
-                <button type="submit" id="submit" class="submit-login"> <h2>Login</h2>
+                <button type="submit" name="login" id="submit" class="submit-login"> <h2>Login</h2>
                 </button>
             </div>
         </form>
