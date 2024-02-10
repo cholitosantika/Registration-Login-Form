@@ -1,5 +1,32 @@
-<?php
+<?php require("config.php");
+session_start();
+global $message_code;
+$return = false;
+
+if (!empty($_SESSION['email'])) {
+    header("location:home.php");
+}
+
+if(isset($_POST['registration'])) {
+    $email = $_POST['email'];
+    $username = $_POST['username'];
+    $password = md5($_POST['password']);
+    $return = user_registration($email, $username, $password);
+
+    if ($return != '2') {
+        echo "<script type='text/javascript'>alert('{$message_code[$return]}');</script>";
+    }
+        else{
+            echo "<script type='text/javascript'>;";
+            echo "alert('{$message_code[$return]}');";
+            echo "window.location.href='login.php';";
+            echo "</script>";
+        }
+}
+
 ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,14 +41,15 @@
 
         <!-- Form Section -->
         <form id="register" action="" method="post">
-            <div class="form-group">
-                <label id="username-label" for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="Enter your Usename" required />
-            </div>
-            <br />
+
             <div class="form-group">
                 <label id="email-label" for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Enter your Email" required />
+            </div>
+            <br />
+            <div class="form-group">
+                <label id="username-label" for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Enter your Usename" required />
             </div>
             <br />
             <div class="form-group">
@@ -30,7 +58,7 @@
             </div>
             <br />
             <div class="form-group">
-                <button type="submit" id="submit" class="submit-register"><h2>Registration</h2> 
+                <button type="submit" name="registration" id="submit" class="submit-register"><h2>Registration</h2> 
                 </button>
             </div>
         </form>
@@ -39,4 +67,3 @@
     </div>
 </body>
 </html>
-
