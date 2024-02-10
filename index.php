@@ -1,5 +1,3 @@
-<?php
-?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,14 +8,14 @@
     <div class="container">
         <header>
             <h1>Welcome!!</h1>
-        </header>
-        <div class="link-login">
-            <a href="login.php"><h2>Login</h2></a>
-        </div>     
+        </header> 
+        <button class="link-login" onclick="window.location.href='login.php';">
+            <h2>Login</h2>
+        </button>
         <br />
-        <div class="link-register">
-            <a href="registration.php"><h2>Registration</h2></a>
-        </div>
+        <button class="link-register" onclick="window.location.href='registration.php';">
+            <h2>Registration</h2>
+        </button>
 
     </div>
   </body>
