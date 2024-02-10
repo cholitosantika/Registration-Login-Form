@@ -1,3 +1,10 @@
+<?php 
+session_start();
+
+if (!empty($_SESSION['email'])) {
+    header("location:home.php");
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
