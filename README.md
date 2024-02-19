@@ -35,4 +35,4 @@ The login page can be accessed via the index page or redirected from the registr
 
 ### g. Home Login Page (PHP+HTML)
 ![home login display](/img/loginhome.png)
-After logging in, the user will be redirected to the Home Login Page.  This page can only be accessed if you are logged in.  This page contains user information in the form of username and email as well as a log out button.
+After logging in, the user will be redirected to the Home Login Page.  This page can only be accessed if you are logged in.  This page contains user information in the form of username and email. There is a log out button that after clicked users will logout and must login again.
