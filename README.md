@@ -31,5 +31,5 @@ From the index page, new users will be directed to the registration page where t
 The login page can be accessed via the index page or redirected from the registration page after successful registration.  On this page the user will enter the email and password used in registration and then after pressing login they will be directed to the login home page.
 
 ### g. Home Login Page (PHP+HTML)
-![home login display](/img/login home.png)
+![home login display]("/img/login home.png")
 After logging in, the user will be redirected to the Home Login Page.  This page can only be accessed if you are logged in.  This page contains user information in the form of username and email as well as a log out button.
