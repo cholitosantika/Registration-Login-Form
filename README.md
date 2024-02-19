@@ -4,8 +4,11 @@ A registration and login form created using PHP, HTML, CSS and JSON database.  I
 
 ## 2. User Demo
 In this project, 1 account has been created to log in.
+
 Username : user1
+
 E-mail : user1@example.com
+
 password : password
 
 ## 3. Project Features
